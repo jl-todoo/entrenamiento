@@ -1,10 +1,10 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="modelo2.list">
-      <field name="name">modelo2 list</field>
-      <field name="model">modelo2.modelo2</field>
+
+      <record model="ir.ui.view" id="modelo2a.list">
+      <field name="name">modelo2a list</field>
+      <field name="model">modelo2a.modelo2a</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -13,22 +13,22 @@
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
+
     <record model="ir.actions.act_window" id="modelo2.action_window">
-      <field name="name">modelo2 window</field>
-      <field name="res_model">modelo2.modelo2</field>
+      <field name="name">modelo2a window</field>
+      <field name="res_model">modelo2a.modelo2a</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="modelo2.action_server">
-      <field name="name">modelo2 server</field>
-      <field name="model_id" ref="model_modelo2_modelo2"/>
+
+    <record model="ir.actions.server" id="modelo2a.action_server">
+      <field name="name">modelo2a server</field>
+      <field name="model_id" ref="model_modelo2a_modelo2a"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -38,23 +38,23 @@
         }
       </field>
     </record>
--->
+
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="modelo2" id="modelo2.menu_root"/>
--->
+
+    <menuitem name="modelo2a" id="modelo2a.menu_root"/>
+
     <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="modelo2.menu_1" parent="modelo2.menu_root"/>
-    <menuitem name="Menu 2" id="modelo2.menu_2" parent="modelo2.menu_root"/>
--->
+
+    <menuitem name="Menu 1" id="modelo2a.menu_1" parent="modelo2a.menu_root"/>
+    <menuitem name="Menu 2" id="modelo2a.menu_2" parent="modelo2a.menu_root"/>
+
     <!-- actions -->
-<!--
-    <menuitem name="List" id="modelo2.menu_1_list" parent="modelo2.menu_1"
-              action="modelo2.action_window"/>
-    <menuitem name="Server to list" id="modelo2" parent="modelo2.menu_2"
-              action="modelo2.action_server"/>
--->
+
+    <menuitem name="List" id="modelo2a.menu_1_list" parent="modelo2a.menu_1"
+              action="modelo2a.action_window"/>
+    <menuitem name="Server to list" id="modelo2a" parent="modelo2a.menu_2"
+              action="modelo2a.action_server"/>
+
   </data>
 </odoo>
